@@ -25,6 +25,9 @@ public:
     float getSdmg(){
         return sdmg;
     }
+    int getSdrain(){
+        return sdrain;
+    }
 
 };
 
