@@ -19,6 +19,10 @@ public:
         sdrain = sdr;
     }
 
+    string getSname(){
+        return sname;
+    }
+
 };
 
 int main()
