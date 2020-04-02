@@ -8,6 +8,11 @@ private:
     int dmg;
     int drain;
 
+public:
+    void setName(string na){
+        name = na;
+    }
+
 };
 
 int main()
