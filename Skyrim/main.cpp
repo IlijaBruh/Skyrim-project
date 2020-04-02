@@ -22,6 +22,9 @@ public:
     string getSname(){
         return sname;
     }
+    float getSdmg(){
+        return sdmg;
+    }
 
 };
 
