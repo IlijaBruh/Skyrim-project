@@ -9,13 +9,13 @@ class spell{
         int sDrain;
 
     public:
-        void setName(string sNa){
+        void setSname(string sNa){
             sName = sNa;
         }
-        void setDmg(float sDm){
+        void setSdmg(float sDm){
             sDmg = sDm;
         }
-        void setDrai(int sDr){
+        void setSdrai(int sDr){
             sDrain = sDr;
         }
 
@@ -33,7 +33,7 @@ class spell{
 
 class Player{
     private:
-        string name;
+        string pName;
         int pHp;
         int pMp;
         int pStamina;
@@ -41,6 +41,11 @@ class Player{
         int pLvl;
         int nextLvl;
         int pXp;
+
+    public:
+        void setPname(string pNa){
+            pName = pNa;
+        }
 
 };
 
