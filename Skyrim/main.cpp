@@ -35,6 +35,7 @@ class Player{
     private:
         string name;
         int hp;
+        int mp;
 
 };
 
