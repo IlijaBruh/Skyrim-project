@@ -36,6 +36,7 @@ class Player{
         string name;
         int hp;
         int mp;
+        int stamina;
 
 };
 
