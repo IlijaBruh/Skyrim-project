@@ -37,6 +37,7 @@ class Player{
         int hp;
         int mp;
         int stamina;
+        int weight;
 
 };
 
