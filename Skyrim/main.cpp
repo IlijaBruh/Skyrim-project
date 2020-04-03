@@ -4,29 +4,29 @@ using namespace std;
 
 class spell{
     private:
-        string sname;
-        float sdmg;
-        int sdrain;
+        string sName;
+        float sDmg;
+        int sDrain;
 
     public:
-        void setName(string sna){
-            sname = sna;
+        void setName(string sNa){
+            sName = sNa;
         }
-        void setDmg(float sdm){
-            sdmg = sdm;
+        void setDmg(float sDm){
+            sDmg = sDm;
         }
-        void setDrai(int sdr){
-            sdrain = sdr;
+        void setDrai(int sDr){
+            sDrain = sDr;
         }
 
         string getSname(){
-            return sname;
+            return sName;
         }
         float getSdmg(){
-            return sdmg;
+            return sDmg;
         }
         int getSdrain(){
-            return sdrain;
+            return sDrain;
         }
 
 };
