@@ -40,6 +40,7 @@ class Player{
         int weight;
         int lvl;
         int noxtLvl;
+        int xp;
 
 };
 
