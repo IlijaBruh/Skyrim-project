@@ -38,6 +38,7 @@ class Player{
         int mp;
         int stamina;
         int weight;
+        int lvl;
 
 };
 
