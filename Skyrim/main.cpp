@@ -39,6 +39,7 @@ class Player{
         int stamina;
         int weight;
         int lvl;
+        int noxtLvl;
 
 };
 
