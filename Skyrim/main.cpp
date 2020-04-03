@@ -34,13 +34,13 @@ class spell{
 class Player{
     private:
         string name;
-        int hp;
-        int mp;
-        int stamina;
-        int weight;
-        int lvl;
-        int noxtLvl;
-        int xp;
+        int pHp;
+        int pMp;
+        int pStamina;
+        int pWeight;
+        int pLvl;
+        int nextLvl;
+        int pXp;
 
 };
 
