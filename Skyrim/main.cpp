@@ -34,6 +34,7 @@ class spell{
 class Player{
     private:
         string name;
+        int hp;
 
 };
 
