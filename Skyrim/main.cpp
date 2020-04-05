@@ -49,6 +49,15 @@ class Player{
 
 };
 
+class item{
+    private:
+        int id;
+        int iWeight;
+        int price;
+        int iDmg;
+        int number;
+};
+
 int main()
 {
     cout << "i used to be an adventurer like you until i took an arrow to the knee" << endl;
