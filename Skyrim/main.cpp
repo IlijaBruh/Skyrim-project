@@ -41,6 +41,7 @@ class Player{
         int pLvl;
         int nextLvl;
         int pXp;
+        int money;
 
     public:
         void setPname(string pNa){
