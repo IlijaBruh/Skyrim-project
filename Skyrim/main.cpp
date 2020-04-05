@@ -38,6 +38,9 @@ class item{
         int price;
         int iDmg;
         int number;
+
+    public:
+
 };
 
 class Player{
