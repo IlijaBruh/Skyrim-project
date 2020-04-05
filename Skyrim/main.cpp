@@ -31,6 +31,15 @@ class spell{
 
 };
 
+class item{
+    private:
+        int id;
+        int iWeight;
+        int price;
+        int iDmg;
+        int number;
+};
+
 class Player{
     private:
         string pName;
@@ -50,14 +59,6 @@ class Player{
 
 };
 
-class item{
-    private:
-        int id;
-        int iWeight;
-        int price;
-        int iDmg;
-        int number;
-};
 
 int main()
 {
