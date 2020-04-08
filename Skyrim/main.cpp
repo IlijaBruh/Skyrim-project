@@ -40,6 +40,31 @@ class item{
         int number;
 
     public:
+        void setId(int idd){
+            id = idd;
+        }
+        void setIWeight(int iWe){
+            iWeight = iWe;
+        }
+        void setSdrai(int pr){
+            price = pr;
+        }
+        void setNumber(int nu){
+            number = nu;
+        }
+
+        int getId(){
+            return id;
+        }
+        int getIWeight(){
+            return iWeight;
+        }
+        int getPrice(){
+            return price;
+        }
+        int getNumber(){
+            return number;
+        }
 
 };
 
