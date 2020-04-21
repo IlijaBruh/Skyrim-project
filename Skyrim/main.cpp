@@ -68,6 +68,42 @@ class item{
 
 };
 
+class monster{
+    private:
+        string mName;
+        int mLvl;
+        int mHp;
+        int mXp;
+
+    public:
+        void setMName(string mNa){
+            mName = mNa;
+        }
+        void setMLvl(int mLv){
+            mLvl = mLv;
+        }
+        void setMHp(int mH){
+            mHp = mH;
+        }
+        void setMXp(int mX){
+            mXp = mX;
+        }
+
+        string getMName(){
+            return mName;
+        }
+        int getMLvl(){
+            return mLvl;
+        }
+        int getMHp(){
+            return mHp;
+        }
+        int getMXp(){
+            return mXp;
+        }
+
+};
+
 class Player{
     private:
         string pName;
