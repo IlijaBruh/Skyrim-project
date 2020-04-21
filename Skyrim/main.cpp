@@ -120,6 +120,27 @@ class Player{
         void setPname(string pNa){
             pName = pNa;
         }
+        void setPHp(int pH){
+            pHp = pH;
+        }
+        void setPStamina(int pSt){
+            pStamina = pSt;
+        }
+        int setPWeight(int pWe){
+            pWeight = pWe;
+        }
+        int setPLvl(int pLv){
+            pLvl = pLv;
+        }
+        int setNextLvl(int ne){
+            nextLvl = ne;
+        }
+        int setPXp(int pX){
+            pXp = pX;
+        }
+        int setMoney(int mo){
+            money = mo;
+        }
 
 };
 
