@@ -142,6 +142,31 @@ class Player{
             money = mo;
         }
 
+        string getPname(){
+            return pName;
+        }
+        int getPHp(){
+            return pHp;
+        }
+        int getPStamina(){
+            return pStamina;
+        }
+        int getPWeight(){
+            return pWeight;
+        }
+        int getPLvl(){
+            return pLvl;
+        }
+        int getNextLvl(){
+            return nextLvl;
+        }
+        int getPXp(){
+            return pXp;
+        }
+        int getMoney(){
+            return money;
+        }
+
 };
 
 
