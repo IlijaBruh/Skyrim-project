@@ -104,6 +104,33 @@ class monster{
 
 };
 
+Class Dragon : monster{
+    private:
+        bool elderD;
+        bool fire;
+        bool ice;
+
+    public:
+        void setElderD(boll el){
+            elderD = el;
+        }
+        void setFire(bool fi){
+            fire =fi;
+        }
+        void setIce(bool ic){
+            ice = ic;
+        }
+        bool getElderD(){
+            return elderD;
+        }
+        bool getFire(){
+            return fire;
+        }
+        bool getIce(){
+            return ice;
+        }
+}
+
 class Player{
     private:
         string pName;
