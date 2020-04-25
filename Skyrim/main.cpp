@@ -104,32 +104,36 @@ class monster{
 
 };
 
-Class Dragon : monster{
+class Dragon : monster{
     private:
-        bool elderD;
-        bool fire;
-        bool ice;
+        string elderD;
+        string type;
 
     public:
-        void setElderD(boll el){
-            elderD = el;
+        void setElderD(int el){
+            if(el == 1){
+                elderD = "yes";
+            }
+            else{
+                elderD = "no";
+            }
         }
-        void setFire(bool fi){
-            fire =fi;
+        void setType(int ty){
+            if(ty == 1){
+                type = "Fire";
+            }
+            else{
+                type = "Ice";
+            }
         }
-        void setIce(bool ic){
-            ice = ic;
-        }
-        bool getElderD(){
+
+        string getElderD(){
             return elderD;
         }
-        bool getFire(){
-            return fire;
+        string getType(){
+            return type;
         }
-        bool getIce(){
-            return ice;
-        }
-}
+};
 
 class Player{
     private:
