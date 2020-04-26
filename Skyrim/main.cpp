@@ -135,6 +135,20 @@ class Dragon : monster{
         }
 };
 
+class Troll : monster{
+    private:
+        string type;
+    public:
+        void getType(int ty){
+            if(ty == 1){
+                type = "Normal";
+            }
+            else{
+                type = "Ice";
+            }
+        }
+};
+
 class Player{
     private:
         string pName;
