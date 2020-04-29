@@ -167,6 +167,24 @@ class wolf : monster{
         }
 };
 
+class Bear : monster{
+    private:
+        string type;
+    public:
+        void setType(int ty){
+            if(ty == 1){
+                type = "Nprmal";
+            }
+            else{
+                type = "Ice";
+            }
+        }
+
+        string getType(){
+            return type;
+        }
+};
+
 class Player{
     private:
         string pName;
