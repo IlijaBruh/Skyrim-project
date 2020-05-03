@@ -264,6 +264,26 @@ class guard : monster{
         }
 };
 
+class spider : monster{
+    private:
+        string type;
+    public:
+        void setType(int ty){
+            if(ty == 1){
+                type = "Normal";
+            }
+            else{
+                type = "Giant";
+            }
+        }
+
+        string getType(){
+            return type;
+        }
+};
+
+
+
 class Player{
     private:
         string pName;
