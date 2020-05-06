@@ -1,8 +1,10 @@
 #include <iostream>
+#include <stdlib.h>
+#include <time.h>
 
 using namespace std;
 
-class spell{
+class Spell{
     private:
         string sName;
         float sDmg;
@@ -31,7 +33,7 @@ class spell{
 
 };
 
-class item{
+class Item{
     private:
         int id;
         int iWeight;
@@ -149,7 +151,7 @@ class Troll : monster{
         }
 };
 
-class wolf : monster{
+class Wolf : monster{
     private:
         string type;
     public:
@@ -185,7 +187,7 @@ class Bear : monster{
         }
 };
 
-class guard : monster{
+class Guard : monster{
     private:
         string town;
         int pBounty;
@@ -264,7 +266,7 @@ class guard : monster{
         }
 };
 
-class spider : monster{
+class Spider : monster{
     private:
         string type;
     public:
@@ -282,7 +284,7 @@ class spider : monster{
         }
 };
 
-class falmer : monster{
+class Falmer : monster{
     private:
         string type;
     public:
@@ -320,8 +322,6 @@ class falmer : monster{
         }
 };
 
-
-
 class Player{
     private:
         string pName;
@@ -335,6 +335,66 @@ class Player{
         int money;
 
     public:
+
+        void fish(){
+            srand (time(NULL));
+            int f;
+            f = rand() % 100 + 1;
+
+            if(f <= 15){
+                cout << "Salamon";
+            }
+            if(f > 15 && f <= 30){
+                cout << "Longfish";
+            }
+            if(f > 30 && f <= 45){
+                cout << "River Betty";
+            }
+            if(f > 45 && f <= 60){
+                cout << "Histcarp";
+            }
+            if(f > 60 && f <= 75){
+                cout << "Silverside Perch";
+            }
+            if(f > 75 && f <= 90){
+                cout << "Cyrodilic Spadetail";
+            }
+            if(f > 90){
+                cout << "Vise srece drugi pu";
+            }
+        }
+
+        void mine(){
+            srand (time(NULL));
+            int i;
+            i = rand() % 100 + 1;
+
+            if(i <= 20){
+                cout << "Iron";
+            }
+            if(i > 20 && i <= 30){
+                cout << "Stalhtim";
+            }
+            if(i > 30 && i <= 40){
+                cout << "Corundum";
+            }
+            if(i > 40 && i <= 50){
+                cout << "Moonstone";
+            }
+            if(i > 50 && i <= 65){
+                cout << "Silver";
+            }
+            if(i > 75 && i <= 80){
+                cout << "Gold!";
+            }
+            if(i > 80 && i <= 90){
+                cout << "Rbony";
+            }
+            if(i > 90){
+                cout << "Vise srece drugi put";
+            }
+        }
+
         void setPname(string pNa){
             pName = pNa;
         }
@@ -390,7 +450,8 @@ class Player{
 
 int main()
 {
-    cout << "i used to be an adventurer like you until i took an arrow to the knee" << endl;
+    cout << "I used to be an adventurer like you until i took an arrow to the knee" << endl;
+
 
     return 0;
 }
