@@ -7,15 +7,11 @@ using namespace std;
 class Spell{
     private:
         string sName;
-        float sDmg;
         int sDrain;
 
     public:
         void setSname(string sNa){
             sName = sNa;
-        }
-        void setSdmg(float sDm){
-            sDmg = sDm;
         }
         void setSdrai(int sDr){
             sDrain = sDr;
@@ -23,9 +19,6 @@ class Spell{
 
         string getSname(){
             return sName;
-        }
-        float getSdmg(){
-            return sDmg;
         }
         int getSdrain(){
             return sDrain;
@@ -322,7 +315,521 @@ class Falmer : monster{
         }
 };
 
-class Player{
+class Merchant : monster{
+    private:
+        string race;
+        string type;
+        int balance;
+
+    public:
+
+        void setRace(int ra){
+
+            switch(ra){
+
+                case 1:
+                    race = "Nord";
+                    break;
+
+                case 2:
+                    race = "Orc";
+                    break;
+
+                case 3:
+                    race = "High Elf";
+                    break;
+
+                case 4:
+                    race = "Wood Elf";
+                    break;
+
+                case 5:
+                    race = "Argonian";
+                    break;
+
+                case 6:
+                    race = "Breton";
+                    break;
+
+                case 7:
+                    race = "Imperial";
+                    break;
+
+                case 8:
+                    race = "Khajiit";
+                    break;
+
+                case 9:
+                    race = "Redguard";
+                    break;
+            }
+        }
+
+        void setType(int ty){
+            switch(ty){
+                case 1:
+                    type = "Alchemist";
+                    break;
+
+                case 2:
+                    type = "Blacksmith";
+                    break;
+
+                case 3:
+                    type = "Fence";
+                    break;
+
+                case 4:
+                    type = "Food Merchant";
+                    break;
+
+                case 5:
+                    type = "General Goods Merchant";
+                    break;
+
+                case 6:
+                    type = "Jewelery";
+                    break;
+
+                case 7:
+                    type ="Spell Merchant";
+                    break;
+
+                case 8:
+                    type = "Tavern";
+                    break;
+
+                case 9:
+                    type = "Traveling Merchant";
+                    break;
+            }
+        }
+
+        void setBalance(int bl){
+            balance = bl;
+        }
+
+        string getRace(){
+            return race;
+        }
+        string getType(){
+            return type;
+        }
+        int getBalance(){
+            return balance;
+        }
+};
+
+class Fish : monster{
+    private:
+        string type;
+
+    public:
+
+        void setType(int ty){
+            switch(ty){
+
+                case 1:
+                    type = "Salamon";
+                    break;
+
+                case 2:
+                    type = "Longfish";
+                    break;
+
+                case 3:
+                    type = "River Betty";
+                    break;
+
+                case 4:
+                    type = "Histcarp";
+                    break;
+
+                case 5:
+                    type = "Silverside Perch";
+                    break;
+
+                case 6:
+                    type = "Cyrodilic Spadetai";
+                    break;
+            }
+        }
+
+        string getType(){
+            return type;
+        }
+};
+
+class Armor : Item{
+    private:
+        int armor;
+        string type;
+
+    public:
+
+        void setArmor(int ar){
+            armor = ar;
+        }
+        void setType(int ty){
+            switch(ty){
+
+                case 1:
+                    type = "Light";
+                    break;
+
+                case 2:
+                    type = "Normal";
+                    break;
+
+                case 3:
+                    type = "Heavy";
+                    break;
+            }
+        }
+
+        int getArmor(){
+            return armor;
+        }
+        string getType(){
+            return type;
+        }
+};
+
+class Staff : Item{
+    private:
+        string type;
+        int charge;
+
+    public:
+        void setType(int ty){
+            switch(ty){
+
+                case 1:
+                    type = "Alteration";
+                    break;
+
+                case 2:
+                    type = "Conjuration";
+                    break;
+
+                case 3:
+                    type = "Destruction";
+                    break;
+
+                case 4:
+                    type = "Illusion";
+                    break;
+
+                case 5:
+                    type = "Restoration";
+                    break;
+
+                case 6:
+                    type = "Deadric";
+                    break;
+            }
+        }
+        void setCharge(){
+            int ch = 100;
+            charge = ch;
+        }
+
+        string getType(){
+            return type;
+        }
+        int getCharge(){
+            return charge;
+        }
+
+        void useStaff(){
+            charge -= 10;
+        }
+        void fillStaff(){
+            charge += 10;
+        }
+};
+
+class Sword : Item{
+    private:
+        string type;
+        int range;
+        int attackSpeed;
+
+    public:
+        void setType(int ty){
+            switch(ty){
+                case 1:
+                    type = "Dagger";
+                    range = 100;
+                    attackSpeed = 25;
+                    break;
+
+                case 2:
+                    type = "Short Sword";
+                    range = 150;
+                    attackSpeed = 30;
+                    break;
+
+                case 3:
+                    type = "Sword";
+                    range = 200;
+                    attackSpeed = 50;
+                    break;
+
+                case 4:
+                    type = "Long Sword";
+                    range = 250;
+                    attackSpeed = 75;
+                    break;
+
+                case 5:
+                    type = "Great Sword";
+                    range = 225;
+                    attackSpeed = 90;
+                    break;
+            }
+        }
+
+        string getType(){
+            return type;
+        }
+        int getRange(){
+            return range;
+        }
+        int getAttackSpeed(){
+            return attackSpeed;
+        }
+};
+
+class Weapons : Item{
+    private:
+        int attackSpeed;
+        int range;
+
+    public:
+        void setAttackSpeed(int as){
+            attackSpeed = as;
+        }
+        void setRange(int ra){
+            range = ra;
+        }
+
+        int getAttackSpeed(){
+            return attackSpeed;
+        }
+        int getRange(){
+            return range;
+        }
+};
+
+class Jewelry : Item{
+    private:
+        string enchantement;
+        string type;
+
+    public:
+        void setType(int ty){
+            switch(ty){
+
+                case 1:
+                    type = "Ring";
+                    break;
+
+                case 2:
+                    type = "Necklaces";
+                    break;
+
+                case 3:
+                    type = "Tiara";
+                    break;
+            }
+        }
+        void setEnchantement(int en){
+            switch(en){
+
+                case 1:
+                    enchantement = "Magicka Regen";
+                    break;
+
+                case 2:
+                    enchantement = "Stamina Regen";
+                    break;
+
+                case 3:
+                    enchantement = "Magicka Regen";
+                    break;
+
+                case 4:
+                    enchantement = "Health Regen";
+                    break;
+
+                case 5:
+                    enchantement = "Health";
+                    break;
+
+                case 6:
+                    enchantement = "Stamina";
+                    break;
+
+                case 7:
+                    enchantement = "Magicka";
+                    break;
+
+                case 8:
+                    enchantement = "Resist Disease";
+                    break;
+
+                case 9:
+                    enchantement = "Resist Fire";
+                    break;
+
+                case 10:
+                    enchantement = "Resist Frost";
+                    break;
+
+                case 11:
+                    enchantement = "Resist Magic";
+                    break;
+
+                case 12:
+                    enchantement = "Resist Poison";
+                    break;
+
+                case 13:
+                    enchantement = "Resist Shock";
+                    break;
+
+                case 14:
+                    enchantement = "Water Breathing";
+                    break;
+            }
+        }
+
+        string getType(){
+            return type;
+        }
+        string getEnchatment(){
+            return enchantement;
+        }
+};
+
+class Restoraton : Spell{
+    private:
+        int healing;
+
+    public:
+        void setHealing(int he){
+            healing = he;
+        }
+
+        int getHealing(){
+            return healing;
+        }
+};
+
+class Destruction : Spell{
+    private:
+        int dmg;
+        int targets;
+
+    public:
+        void setDmg(int dm){
+            dmg = dm;
+        }
+        void setTargets(int tg){
+            targets = tg;
+        }
+
+        int getDmg(){
+            return dmg;
+        }
+        int getTargets(){
+            return targets;
+        }
+};
+
+class Conjuration : Spell{
+    private:
+        string summon;
+
+    public:
+        void setSummon(int su){
+            switch(su){
+
+                case 1:
+                    summon = "Summon Ash Guardian";
+                    break;
+
+                case 2:
+                    summon = "Summon Daedra";
+                    break;
+
+                case 3:
+                    summon = "Summon Dermora Lord";
+                    break;
+
+                case 4:
+                    summon = "Summon Wrathman";
+                    break;
+
+                case 5:
+                    summon = "Summon Storm Atronach";
+                    break;
+
+                case 6:
+                    summon = "Summon Flame Atronach";
+                    break;
+
+                case 7:
+                    summon = "Summon Frost Atronach";
+                    break;
+
+                case 8:
+                    summon = "Summon Storm Atronach";
+                    break;
+
+                case 9:
+                    summon = "Summon Undead";
+                    break;
+
+                case 10:
+                    summon = "Summon Dagger";
+                    break;
+
+                case 11:
+                    summon = "Summon Sword";
+                    break;
+
+                case 12:
+                    summon = "Summon Zombie";
+                    break;
+
+                case 13:
+                    summon = "Summon Familiar";
+                    break;
+
+                case 14:
+                    summon = "Summon Bow";
+                    break;
+
+                case 15:
+                    summon = "Summon Battleaxe";
+                    break;
+
+            }
+        }
+
+        string getSummon(){
+            return summon;
+        }
+};
+
+class Attack{
+    public:
+        virtual void attack()=0;
+};
+
+class Player : public Attack{
     private:
         string pName;
         int pHp;
@@ -335,6 +842,10 @@ class Player{
         int money;
 
     public:
+
+        void attack(){
+            cout << "Player attacked";
+        }
 
         void fish(){
             srand (time(NULL));
