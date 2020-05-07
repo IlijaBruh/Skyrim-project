@@ -1,6 +1,13 @@
 # depslib dependency file v1.0
-1588777778 source:c:\users\comp\desktop\skyrim-project\skyrim\main.cpp
+1588886908 source:c:\users\comp\desktop\skyrim-project\skyrim\main.cpp
 	<iostream>
 	<stdlib.h>
 	<time.h>
+	"Vampire.h"
+
+1588886908 c:\users\comp\desktop\skyrim-project\skyrim\vampire.h
+
+1588886945 source:c:\users\comp\desktop\skyrim-project\skyrim\vampire.cpp
+	"Vampire.h"
+	<iostream>
 

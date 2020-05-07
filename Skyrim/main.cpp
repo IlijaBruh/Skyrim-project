@@ -1,6 +1,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include <time.h>
+#include "Vampire.h"
 
 using namespace std;
 
@@ -962,7 +963,6 @@ class Player : public Attack{
 int main()
 {
     cout << "I used to be an adventurer like you until i took an arrow to the knee" << endl;
-
 
     return 0;
 }
