@@ -1,13 +1,46 @@
 # depslib dependency file v1.0
-1588886908 source:c:\users\comp\desktop\skyrim-project\skyrim\main.cpp
+1588934010 source:c:\users\comp\desktop\skyrim-project\skyrim\main.cpp
 	<iostream>
 	<stdlib.h>
 	<time.h>
-	"Vampire.h"
 
 1588886908 c:\users\comp\desktop\skyrim-project\skyrim\vampire.h
 
 1588886945 source:c:\users\comp\desktop\skyrim-project\skyrim\vampire.cpp
 	"Vampire.h"
 	<iostream>
+
+1588932893 source:c:\users\comp\desktop\skyrim-project\skyrim\spell.cpp
+	"Spell.h"
+	<iostream>
+
+1588929737 c:\users\comp\desktop\skyrim-project\skyrim\spell.h
+	<iostream>
+
+1588932892 source:c:\users\comp\desktop\skyrim-project\skyrim\restoration.cpp
+	"Restoration.h"
+	<iostream>
+	"Spell.h"
+
+1588932893 c:\users\comp\desktop\skyrim-project\skyrim\restoration.h
+	<iostream>
+	"Spell.h"
+
+1588933319 source:c:\users\comp\desktop\skyrim-project\skyrim\destruction.cpp
+	"Destruction.h"
+	<iostream>
+	"Spell.h"
+
+1588933278 c:\users\comp\desktop\skyrim-project\skyrim\destruction.h
+	<iostream>
+	"Spell.h"
+
+1588933727 source:c:\users\comp\desktop\skyrim-project\skyrim\conjuration.cpp
+	"Conjuration.h"
+	<iostream>
+	"Spell.h"
+
+1588933716 c:\users\comp\desktop\skyrim-project\skyrim\conjuration.h
+	<iostream>
+	"Spell.h"
 

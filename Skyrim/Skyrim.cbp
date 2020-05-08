@@ -32,8 +32,32 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Armor.h" />
+		<Unit filename="Bear.h" />
+		<Unit filename="Conjuration.cpp" />
+		<Unit filename="Conjuration.h" />
+		<Unit filename="Destruction.cpp" />
+		<Unit filename="Destruction.h" />
+		<Unit filename="Dragon.h" />
+		<Unit filename="Falmer.h" />
+		<Unit filename="Fish.h" />
+		<Unit filename="Guard.h" />
+		<Unit filename="Item.h" />
+		<Unit filename="Jewelry.h" />
+		<Unit filename="Merchant.h" />
+		<Unit filename="Monster.h" />
+		<Unit filename="Restoration.cpp" />
+		<Unit filename="Restoration.h" />
+		<Unit filename="Spell.cpp" />
+		<Unit filename="Spell.h" />
+		<Unit filename="Spider.h" />
+		<Unit filename="Staff.h" />
+		<Unit filename="Sword.h" />
+		<Unit filename="Troll.h" />
 		<Unit filename="Vampire.cpp" />
 		<Unit filename="Vampire.h" />
+		<Unit filename="Weapons.h" />
+		<Unit filename="Wolf.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
