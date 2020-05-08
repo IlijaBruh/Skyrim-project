@@ -7,12 +7,22 @@ using namespace std;
 
 class Bear
 {
-    public:
-        Bear();
-
-    protected:
-
     private:
+        string type;
+
+    public:
+        void setType(int ty){
+            if(ty == 1){
+                type = "Ice";
+            }
+            else{
+                type = "Normal";
+            }
+        }
+
+        string getType(){
+            return type;
+        }
 };
 
 #endif // BEAR_H
